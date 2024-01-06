@@ -339,10 +339,25 @@ input,button,i,select{
 }
 
 
-@media screen and (max-width: 668px){
+@media screen and (max-width: 468px){
     
     .container{
         display: none;
     }
+
+    .alert{
+        display: block;
+    }
+}
+@media screen and (min-width: 468px){
+    
+    .alert{
+        display: none;
+    }
+
+    .container{
+        display: block;
+    }
     
 }
+
