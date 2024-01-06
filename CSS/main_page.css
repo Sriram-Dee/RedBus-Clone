@@ -299,16 +299,17 @@ button.search:hover{
 }
 
 .bottom .right{
-    width: 650px;
+    max-width: 650px;
     display: flex;
-    justify-content: space-around;
+    padding: 0px 40px 0px 20px;
+    background-color: #f75b5b;
 }
 .bottom ul{
     width: 100px;
     margin: 100px 10px  ;
     display: flex;
     flex-direction: column;
-    /* justify-content:  flex-start; */
+    flex-grow: 1;
 }
 
 .bottom ul li:hover{
