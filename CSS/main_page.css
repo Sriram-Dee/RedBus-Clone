@@ -74,7 +74,7 @@ a{
 
 .content{
     margin-top: 120px;
-    width: 100%;
+    /* width: 100%; */
     height: 200px;
     background: url(../redbus/top-bg.svg);
     background-position: center;
@@ -91,11 +91,13 @@ a{
     text-align: center;
     margin-top: 130px;
     background-color: #fff;
-    width: 70%;
+    min-width: 70%;
     border-radius: 10px;
     box-shadow: 0 0 10px 1px rgb(155, 155, 155);
     position: relative;
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 .content .choose label{
     display: inline-block;
@@ -107,7 +109,6 @@ a{
     border-radius: 10px;
     padding: 10px;
     border: 1px solid transparent;
-    
 }
 .content .choose label:hover{
     background-color: rgba(0, 191, 255, 0.123);
@@ -147,7 +148,7 @@ button.search{
     top: 0px;
     right: 0;
     border: none;
-    position: absolute;
+    /* position: absolute; */
     border-radius: 0px 10px 10px 0px;
     font-size: 1em;
     text-transform: uppercase;
@@ -273,12 +274,13 @@ button.search:hover{
     justify-content: baseline;
 }
 .left{
-    width: 350px;
+    width: 450px;
     margin-left:  100px ;
     margin-top: 100px;
     margin-right: 50px;
     line-height: 30px;
     font-size: 16px;
+    flex-grow: 1;
 }
 
 .left a{
@@ -297,10 +299,9 @@ button.search:hover{
 }
 
 .bottom .right{
-    max-width: 650px;
     display: flex;
     padding: 0px 40px 0px 20px;
-    background-color: #f75b5b;
+    flex-grow: 1;
 }
 .bottom ul{
     width: 100px;
@@ -322,4 +323,23 @@ button.search:hover{
 }
 input,button,i,select{
     cursor: pointer;
+}
+
+.alert{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /* text-wrap: wrap; */
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 668px){
+    
+    .container{
+        display: none;
+    }
+    
 }
