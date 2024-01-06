@@ -32,7 +32,6 @@ nav {
     align-items: center;
     position: fixed;
     top: 0px;
-    font-size: 1em;
     font-weight: 100;
     color: var(--fontClr);
     background-color: #fff;
@@ -48,7 +47,7 @@ nav ul{
 nav ul li  {
     list-style: none;
     display: inline-block;     
-    font-size: 1em;
+    font-size: 12px;
     font-weight: 100;
     margin: 0px 20px;
 }
@@ -131,13 +130,13 @@ a{
     background-color: transparent;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 1px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: space-between;
 }
 .content .choose input::placeholder, input[type="date"]{
-    font-size: 1em;
+    font-size: 12px;
     color: gray;
     user-select: none;
 }
@@ -152,7 +151,7 @@ button.search{
     border: none;
     position: absolute;
     border-radius: 0px 10px 10px 0px;
-    font-size: 1.5em;
+    font-size: 1em;
     text-transform: uppercase;
 }
 button.search:hover{
@@ -182,7 +181,7 @@ button.search:hover{
 }
 
 .airportTransfer{
-    height: 220PX;
+    height: 220px;
     background-color: rgba(201, 193, 184, 0.218);
     display: flex;
     align-items: center;
@@ -203,12 +202,12 @@ button.search:hover{
     outline: none;
     height: 50px;
     border-radius: 10px;
-    font-size: 1.5em;
+    font-size: 16px;
 }
 .airportTransfer p, .ads p{
     font-weight: 400;
     font-family: var(--font);
-    font-size: 1.1em;
+    font-size: 14px;
     letter-spacing: 1px;
 }
 .ads{
@@ -270,22 +269,23 @@ button.search:hover{
 
 .bottom{
     display: flex;
-    height: 500px;
+    min-height: 500px;
     background-color: lightgray;
     flex-wrap: wrap;
+    justify-content: baseline;
 }
 .left{
-    width: 300px;
-    margin-left:  150px ;
+    width: 350px;
+    margin-left:  100px ;
     margin-top: 100px;
     margin-right: 50px;
     line-height: 30px;
-    font-size: 1.2em;
+    font-size: 16px;
 }
 
 .left a{
     display: inline-block;
-    font-size: 3em;
+    font-size: 32px;
     transition: all .3s linear;
     border-radius: 50%;
     padding: 10px;
@@ -297,13 +297,18 @@ button.search:hover{
     color: #ff4d4d;
     scale: 1.05;
 }
+
+.bottom .right{
+    width: 650px;
+    display: flex;
+    justify-content: space-around;
+}
 .bottom ul{
     width: 100px;
-    margin: 100px 30px  ;
+    margin: 100px 10px  ;
     display: flex;
     flex-direction: column;
-    justify-content:  baseline;
-    
+    /* justify-content:  flex-start; */
 }
 
 .bottom ul li:hover{
@@ -313,7 +318,7 @@ button.search:hover{
 .bottom ul li{
     list-style: none;
     margin-bottom: 30px;
-    font-size: 1.2em;
+    font-size: 16px;
     color: rgb(67, 67, 67);
 }
 input,button,i,select{
