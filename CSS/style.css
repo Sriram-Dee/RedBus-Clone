@@ -80,7 +80,7 @@ input,input:active{
     gap:5px;
 }
 .fb,.gmail{
-    width: 150px;
+    width: 170px;
     height: 30px;
     border-radius: 10px;
     border: none;
@@ -89,6 +89,8 @@ input,input:active{
     align-items: center;
     justify-content: center;
     gap: 5px;
+    font-size: 12px;
+    
  }
 
  .fb{
@@ -101,9 +103,9 @@ input,input:active{
  }
 
  .fa-brands{
-    font-size: 18px;
+    font-size: 16px;
  }
 
  .button-bottom~p{
-    margin-top: 40px;
+    margin-top: 20px;
  }
